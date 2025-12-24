@@ -710,11 +710,6 @@ h3 {
   user-select: none;
 }
 
-.image-popup {
-  touch-action: none;
-}
-
-
 .image-popup img {
   user-select: none;
 }
@@ -924,156 +919,92 @@ h3 {
   max-width: 700px;
 }
 
-/* ===============================
-   Mobile Optimization
-   =============================== */
 @media (max-width: 768px) {
 
   html, body {
-  max-width: 100%;
-  overflow-x: clip;
-}
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
 
   section {
-    padding: 20px 12px;
+    padding: 20px 14px;
   }
 
-  /* الهيرو */
+  /* Hero */
   .hero {
-    padding: 30px 15px;
-    text-align: center;
+    min-height: auto;
+    padding: 40px 16px;
   }
 
-  h1 { font-size: 24px; }
-  h2 { font-size: 20px; }
-  h3 { font-size: 18px; }
+  h1 { font-size: 22px; }
+  h2 { font-size: 19px; }
+  h3 { font-size: 17px; }
 
   p {
     font-size: 14px;
     line-height: 1.6;
- } 
-
-  .doctor-name {
-    font-size: 26px;
-    line-height: 1.4;
   }
 
-  .doctor-title {
-    font-size: 16px;
+  /* WhatsApp */
+  .whatsapp-btn,
+  .card-whatsapp-btn {
+    font-size: 15px;
+    padding: 12px 18px;
   }
 
-  /* زر واتساب */
-  .whatsapp-btn {
-    font-size: 16px;
-    padding: 12px 20px;
-  }
-
-  /* الكروت */
+  /* Cards */
   .cards {
-    grid-template-columns: 1fr;
-    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
   }
 
   .card {
-    padding: 15px;
+    width: 100%;
+    padding: 16px;
   }
 
-  /* قسم الصور */
-  .gallery-section {
-    padding: 30px 10px;
-  }
-
+  /* Gallery */
   .gallery-slider {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
-    scroll-snap-type: x mandatory;
-    width: 100%;
   }
 
   .gallery-grid {
     display: flex;
-    gap: 12px;
-    padding: 0 10px;
+    gap: 14px;
+    padding: 10px;
   }
 
-  .gallery-grid {
-    animation: none !important;
-    transform: none !important;
-  }
   .gallery-card {
-    flex: 0 0 90%;
-    max-width: 90%;
+    min-width: 85%;
     scroll-snap-align: center;
   }
 
   .gallery-card img {
     width: 100%;
     height: auto;
-    display: block;
     object-fit: contain;
-    border-radius: 12px;
   }
 
+  /* Popup */
   .image-popup {
-    position: fixed;
-    inset: 0;
     padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
-  .image-popup img {
-    max-width: 100%;
-    max-height: 80vh;
-    width: auto;
-    height: auto;
-    object-fit: contain;
-  }
-
-  /* قسم المعلومات */
-.info-section {
-  padding: 25px 15px;
-  font-size: 14.5px;
-}
-
-.info-box p {
-  line-height: 1.6;
-}
-
-}
-/* ===============================
-   Fix Gallery on Mobile
-   =============================== */
-@media (max-width: 768px) {
-
-  /* إلغاء السلايدر الأفقي */
-  .gallery-slider {
-    overflow: visible;
-  }
-
-  .gallery-grid {
-    display: flex;
-    flex-direction: column;
-    transform: none !important;
-  }
-
-  .gallery-card {
-    width: 100%;
-    min-width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .gallery-card img {
-    height: 200px;
-    object-fit: cover;
-  }
-
-  /* Popup الصورة */
   .image-popup img {
     max-width: 95%;
-    max-height: 75vh;
-    margin: auto;
+    max-height: 85vh;
   }
+
+  /* Info */
+  .info-section {
+    padding: 24px 16px;
+    font-size: 14.5px;
+  }
+
 }
+
+
 
