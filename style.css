@@ -923,3 +923,79 @@ h3 {
   border-radius: 12px;
   max-width: 700px;
 }
+
+/* ===============================
+   Mobile Optimization
+   =============================== */
+@media (max-width: 768px) {
+
+  /* منع أي خروج أفقي */
+  body {
+    overflow-x: hidden;
+  }
+
+  /* الهيرو */
+  .hero {
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .doctor-name {
+    font-size: 26px;
+    line-height: 1.4;
+  }
+
+  .doctor-title {
+    font-size: 16px;
+  }
+
+  /* زر واتساب */
+  .whatsapp-btn {
+    font-size: 16px;
+    padding: 12px 20px;
+  }
+
+  /* الكروت */
+  .cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  /* قسم الصور */
+  .gallery-section {
+    padding: 40px 10px;
+  }
+
+  .gallery-slider {
+    overflow: hidden;
+  }
+
+  .gallery-grid {
+    gap: 15px;
+  }
+
+  .gallery-card {
+    min-width: 85%;
+  }
+
+  /* Popup الصورة */
+  .image-popup img {
+    max-width: 95%;
+    max-height: 80%;
+  }
+
+  /* قسم المعلومات */
+  .info-section {
+    padding: 40px 20px;
+    font-size: 16px;
+  }
+
+  .info-box p {
+    line-height: 1.7;
+  }
+
+}
