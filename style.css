@@ -1195,6 +1195,22 @@ h3 {
 
 }
 
+@media (max-width: 768px) {
+
+  /* تصغير المسافة أعلى سكشن (معًا نرعى صحة طفلك) */
+  .cards-section,
+  .health-section {
+    margin-top: 12px !important;
+    padding-top: 12px !important;
+  }
+
+  /* تصغير البوكس اللي شايل الكروت نفسها */
+  .cards {
+    padding-top: 8px;
+  }
+
+}
+
 
 
 
