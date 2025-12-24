@@ -1211,6 +1211,24 @@ h3 {
 
 }
 
+@media (max-width: 768px) {
+
+  /* تصغير المربع الكبير اللي شايل سكشن (معًا نرعى صحة طفلك) */
+  .cards-section,
+  .health-section {
+    margin-top: 0 !important;
+    padding-top: 8px !important;
+  }
+
+}
+@media (max-width: 768px) {
+
+  .whatsapp-btn {
+    margin-bottom: 16px;
+  }
+
+}
+
 
 
 
