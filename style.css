@@ -1023,6 +1023,26 @@ h3 {
   .gallery-card {
     scroll-snap-align: center;
   }
+  .cards {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 10px;
+  }
+
+  .cards::-webkit-scrollbar {
+    display: none;
+  }
+
+  .card {
+    min-width: 85%;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+  }
+
 }
 
 
