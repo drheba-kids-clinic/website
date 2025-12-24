@@ -849,11 +849,6 @@ h3 {
   min-width: 300px;
 }
 
-.gallery-grid {
-  transition: transform 0.6s ease;
-  touch-action: pan-y;
-}
-
 /* قسم المعلومات */
 .info-section {
   padding: 60px 20px;
@@ -977,6 +972,11 @@ h3 {
     padding: 10px;
   }
 
+  .gallery-grid {
+    display: flex;
+    gap: 14px;
+    scroll-snap-type: x mandatory;
+  }
   .gallery-card {
     min-width: 85%;
     scroll-snap-align: center;
