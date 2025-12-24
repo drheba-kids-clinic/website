@@ -1043,3 +1043,38 @@ h3 {
 }
 
 }
+/* ===============================
+   Fix Gallery on Mobile
+   =============================== */
+@media (max-width: 768px) {
+
+  /* إلغاء السلايدر الأفقي */
+  .gallery-slider {
+    overflow: visible;
+  }
+
+  .gallery-grid {
+    display: flex;
+    flex-direction: column;
+    transform: none !important;
+  }
+
+  .gallery-card {
+    width: 100%;
+    min-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .gallery-card img {
+    height: 200px;
+    object-fit: cover;
+  }
+
+  /* Popup الصورة */
+  .image-popup img {
+    max-width: 95%;
+    max-height: 75vh;
+    margin: auto;
+  }
+}
+
