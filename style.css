@@ -1127,6 +1127,53 @@ h3 {
 
 }
 
+/* ===============================
+   Reduce Spacing (Mobile Only)
+   Safe & Final
+   =============================== */
+@media (max-width: 768px) {
+
+  /* تقليل المسافة بين الأقسام */
+  section {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  /* عنوان كل قسم */
+  .section-title {
+    margin-bottom: 20px;
+  }
+
+  /* كروت (معًا نرعى صحة طفلك) */
+  .cards {
+    padding-bottom: 8px;
+  }
+
+  .card {
+    margin-bottom: 0;
+  }
+
+  /* قسم المعلومات */
+  .info-section {
+    margin: 40px 0;
+    padding: 20px 14px;
+  }
+
+  .info-box {
+    padding: 20px 16px;
+  }
+
+  .info-box p {
+    margin-bottom: 10px;
+  }
+
+  /* قسم صور العيادة */
+  .gallery-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+}
 
 
 
