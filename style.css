@@ -916,42 +916,40 @@ h3 {
 
 @media (max-width: 768px) {
 
-  /* ===== Global safety ===== */
-  * {
-    box-sizing: border-box;
-  }
-
+  /* منع أي خروج أفقي */
   html, body {
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
   }
 
+  * {
+    box-sizing: border-box;
+  }
+
   section {
-    padding: 20px 14px;
+    padding: 18px 14px;
   }
 
-  /* ===== Hero ===== */
+  /* ================= Hero ================= */
   .hero {
-    min-height: auto;
-    padding: 40px 16px;
+    padding: 36px 14px;
   }
 
-  .hero h1 {
+  h1 {
     font-size: 20px;
     line-height: 1.4;
-    padding: 0 10px;
-    word-break: break-word;
     text-align: center;
+    word-break: break-word;
   }
 
   h2 {
-    font-size: 19px;
-    line-height: 1.4;
+    font-size: 18px;
+    text-align: center;
   }
 
   h3 {
-    font-size: 17px;
+    font-size: 16px;
   }
 
   p {
@@ -959,22 +957,28 @@ h3 {
     line-height: 1.6;
   }
 
-  /* ===== WhatsApp Buttons ===== */
+  .doctor-name {
+    max-width: 100%;
+    word-break: break-word;
+    text-align: center;
+  }
+
+  /* ================= WhatsApp ================= */
   .whatsapp-btn,
   .card-whatsapp-btn {
-    font-size: 15px;
+    font-size: 14px;
     padding: 12px 18px;
   }
 
-  /* ===== Cards (معًا نرعى صحة طفلك) ===== */
+  /* ================= كروت (معًا نرعى صحة طفلك) ================= */
   .cards {
     display: flex;
     flex-direction: row;
-    gap: 16px;
+    gap: 14px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
-    padding: 10px 16px 20px;
+    padding: 6px 6px 16px;
   }
 
   .cards::-webkit-scrollbar {
@@ -982,16 +986,27 @@ h3 {
   }
 
   .card {
-    min-width: 85%;
+    min-width: 82%;
     flex-shrink: 0;
     scroll-snap-align: center;
     background: #fff;
     border-radius: 18px;
-    padding: 18px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    padding: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
   }
 
-  /* ===== Gallery (صور وإعلانات العيادة) ===== */
+  /* ================= معلومات تهمك قبل الحجز ================= */
+  .info-section {
+    padding: 20px 14px;
+    font-size: 14px;
+  }
+
+  .info-section * {
+    max-width: 100%;
+    word-break: break-word;
+  }
+
+  /* ================= Gallery (صور العيادة) ================= */
   .gallery-slider {
     overflow-x: auto;
     overflow-y: hidden;
@@ -1002,7 +1017,7 @@ h3 {
   .gallery-grid {
     display: flex;
     gap: 14px;
-    padding: 10px;
+    padding: 8px;
     scroll-snap-type: x mandatory;
     animation: none !important;
     transform: none !important;
@@ -1010,23 +1025,24 @@ h3 {
   }
 
   .gallery-card {
-    min-width: 85%;
-    max-width: 85%;
+    min-width: 80%;
+    max-width: 80%;
     flex-shrink: 0;
     scroll-snap-align: center;
+    background: #fff;
     border-radius: 18px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
     overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
   }
 
   .gallery-card img {
     width: 100%;
-    height: 180px;
+    height: 170px;
     object-fit: cover;
     display: block;
   }
 
-  /* ===== Popup ===== */
+  /* ================= Popup ================= */
   .image-popup {
     padding: 10px;
   }
@@ -1036,26 +1052,8 @@ h3 {
     max-height: 85vh;
   }
 
-  /* ===== Info Section (معلومات تهمك قبل الحجز) ===== */
-  .info-section {
-    padding: 24px 16px;
-    font-size: 14.5px;
-    max-width: 100%;
-    overflow-x: hidden;
-  }
-
-  .info-section h2 {
-    font-size: 18px;
-    line-height: 1.4;
-  }
-
-  .info-section p,
-  .info-section li {
-    word-break: break-word;
-    line-height: 1.7;
-  }
-
 }
+
 
 
 
