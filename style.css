@@ -1175,6 +1175,26 @@ h3 {
 
 }
 
+/* ===============================
+   Reduce Gap Between Info & Gallery
+   Mobile Only
+   =============================== */
+@media (max-width: 768px) {
+
+  /* تقليل المسافة تحت قسم معلومات تهمك قبل الحجز */
+  .info-section {
+    margin-bottom: 24px !important;
+    padding-bottom: 20px;
+  }
+
+  /* تقليل المسافة فوق قسم صور وإعلانات العيادة */
+  .gallery-section {
+    margin-top: 24px !important;
+    padding-top: 24px;
+  }
+
+}
+
 
 
 
