@@ -929,11 +929,10 @@ h3 {
    =============================== */
 @media (max-width: 768px) {
 
-  /* منع أي خروج أفقي */
-  body {
-    overflow-x: hidden;
-    font-size: 15px;
-  }
+  html, body {
+  max-width: 100%;
+  overflow-x: clip;
+}
 
   section {
     padding: 20px 12px;
