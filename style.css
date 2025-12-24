@@ -1004,6 +1004,25 @@ h3 {
     font-size: 14.5px;
   }
 
+.gallery-grid {
+    animation: none !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .gallery-slider {
+    overflow-x: auto;
+    overflow-y: hidden;
+    touch-action: pan-x;
+  }
+
+  .gallery-grid {
+    scroll-snap-type: x mandatory;
+  }
+
+  .gallery-card {
+    scroll-snap-align: center;
+  }
 }
 
 
