@@ -930,7 +930,7 @@ h3 {
 @media (max-width: 768px) {
 
   /* منع أي خروج أفقي */
- body {
+  body {
     overflow-x: hidden;
     font-size: 15px;
   }
@@ -953,7 +953,6 @@ h3 {
     font-size: 14px;
     line-height: 1.6;
  } 
-
 
   .doctor-name {
     font-size: 26px;
@@ -986,20 +985,26 @@ h3 {
   }
 
   .gallery-slider {
-    overflow: hidden;
-     width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    width: 100%;
   }
 
   .gallery-grid {
     display: flex;
     gap: 12px;
-    padding: 0;
+    padding: 0 10px;
   }
 
+  .gallery-grid {
+    animation: none !important;
+    transform: none !important;
+  }
   .gallery-card {
-   min-width: 100%;
-    max-width: 100%;
-    flex: 0 0 100%;
+    flex: 0 0 90%;
+    max-width: 90%;
+    scroll-snap-align: center;
   }
 
   .gallery-card img {
@@ -1011,26 +1016,30 @@ h3 {
   }
 
   .image-popup {
+    position: fixed;
+    inset: 0;
     padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-
 
   .image-popup img {
     max-width: 100%;
-    max-height: 85vh;
-    margin: auto;
-    display: block;
+    max-height: 80vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
   }
-
 
   /* قسم المعلومات */
-  .info-section {
-    padding: 40px 20px;
-    font-size: 16px;
-  }
+.info-section {
+  padding: 25px 15px;
+  font-size: 14.5px;
+}
 
-  .info-box p {
-    line-height: 1.7;
-  }
+.info-box p {
+  line-height: 1.6;
+}
 
 }
