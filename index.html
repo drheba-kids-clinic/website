@@ -357,7 +357,13 @@ const yearEl = document.getElementById("currentYear");
 if (yearEl) {
   yearEl.textContent = new Date().getFullYear();
 }
+const today = new Date();
+  const hideAfter = new Date("2026-02-01");
 
+  if (today > hideAfter) {
+    const banner = document.getElementById("newYearBanner");
+    if (banner) banner.style.display = "none";
+  }
 </script>
 
 <footer class="site-footer">
