@@ -349,15 +349,20 @@ function handleGallerySwipe() {
     slider.style.transform = `translateX(-${sliderIndex * cardWidth}px)`;
   }
 }
+/* ===== تحديث السنة تلقائيًا ===== */
+const yearEl = document.getElementById("currentYear");
+if (yearEl) {
+  yearEl.textContent = new Date().getFullYear();
+}
 
 </script>
 
 <footer class="site-footer">
   <p>
-     د. هبه صلاح أبوعباس — استشاري أمراض الجهاز الهضمي والكبد وتغذية الأطفال  
-    <br>
-     جميع الحقوق محفوظة © 2026
-  </p>
+  د. هبه صلاح أبو عباس — استشاري أمراض الجهاز الهضمي والكبد وتغذية الأطفال  
+  <br>
+  جميع الحقوق محفوظة © <span id="currentYear"></span>
+</p>
 </footer>
 
 </body>
