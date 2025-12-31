@@ -1303,3 +1303,18 @@ h3 {
   }
 }
 
+/* =========================
+   Cards – Soft Visual Touch
+========================= */
+
+.card,
+.gallery-card {
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover,
+.gallery-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.12);
+}
