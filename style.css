@@ -1264,6 +1264,19 @@ h3 {
   color: #7a1f3d;
 }
 
+.video-section {
+  margin-top: 16px;
+}
+
+.video-container {
+  background: #fff;
+}
+
+.video-title {
+  padding: 12px 8px;
+  background: #fff;
+  border-radius: 0 0 16px 16px;
+}
 
 
 
