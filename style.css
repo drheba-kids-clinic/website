@@ -1320,7 +1320,7 @@ h3 {
 }
 
 .site-footer {
-  background: rgba(255, 255, 255, 0.65);
+  background: rgba(255, 255, 255, 0.75);
   padding: 16px 12px;
   text-align: center;
   font-size: 10px;
@@ -1332,4 +1332,7 @@ h3 {
   box-shadow: 0 -6px 18px rgba(0,0,0,0.06);
 }
 
+.site-footer p {
+  line-height: 1.6;
+}
 
