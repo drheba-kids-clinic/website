@@ -591,6 +591,18 @@ h3 {
   .section-title {
     font-size: 26px;
   }
+
+  .videos-section {
+    padding: 28px 14px;
+  }
+
+  .video-card {
+    padding: 14px;
+  }
+
+  .video-title {
+    font-size: 14px;
+  }
 }
 
 .hero {
