@@ -322,7 +322,7 @@ const cardWidth = cards[0].offsetWidth + 30; // عرض الكارت + المسا
 const maxIndex = cards.length - 1;
 
 setInterval(() => {
-  if (!autoSlidePaused) {
+  if (window.innerWidth <= 768 && !autoSlidePaused) {
     if (sliderIndex < maxIndex) {
       sliderIndex++;
     } else {
@@ -332,6 +332,7 @@ setInterval(() => {
     slider.style.transform = `translateX(-${sliderIndex * cardWidth}px)`;
   }
 }, 4000);
+
 
 /* ===== Swipe للموبايل (Gallery فقط) ===== */
 
